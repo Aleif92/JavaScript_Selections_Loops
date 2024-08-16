@@ -79,6 +79,32 @@ do {
     i++;
 }while(i<= 100)
 
+//     ## Exercise 4: Find Value
+
+// In this exercise, you will count from iterate from 1 to n. If you iterate over a given value, then break out the loop and print "Found value!". If you do not find the value in the given range, print "Did not find value".
+
+// 1. Start with the following code:
+
+let value = Math.round((Math.random() * 500)); // creates a random number between 0 and 500
+let n = Math.round(Math.random() * (500 - 100) + 100); // creates a random number between 100 and 500
+
+
+// 2. Create a `for` loop that iterates from 0 to n
+// 3. If your current iteration is equal to `value`, then print "Found value!", and `break` out of the loop
+// 4. If you do not ever find the value and break out of the loop, then after the loop is finished, print "Did not find value"
+
+for(let i = 1; i <= n; i++){
+    if(i == value){
+        console.log(`Found ${value}`);
+        break;
+
+    }
+    if (i == n){
+        console.log(`Did not find ${value} within 1 -${n}`);
+    }
+    
+
+}
 
 
 
